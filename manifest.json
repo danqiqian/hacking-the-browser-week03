@@ -1,0 +1,25 @@
+{
+  "manifest_version":2,
+  "name":"danqi",
+  "version": "1.0",
+
+  "browser_action":{
+  "default_title":"hello,world"
+  },
+
+
+  "content_scripts":[
+    {
+      "matches":["<all_urls>"],
+      "css":["content.css"]
+    }
+  ],
+
+  "permissions":["activeTab"],
+
+  "background":{
+    "scripts":["background.js"],
+    "persistent":false
+
+  }
+}
